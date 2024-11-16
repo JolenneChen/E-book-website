@@ -77,3 +77,91 @@ nav ul li a:hover{
 i{
     margin-right: 5px;
 }
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+section{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+#home{
+    background-image: url("/img/hero-images.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 25px 25px #0e0e0e inset;
+    color: white;
+}
+
+.home-outline{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-container{
+    background: rgba(47, 91, 131, 0.8);
+    width: 50%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-box{
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.home-box h1{
+    outline: none;
+    text-transform: uppercase;
+    background: linear-gradient(230deg, #d9eff7 0%, #b5e1f7 25%, #76d4f4 50%, #59b3f7 75%, #e7f0f4 100%);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 15s linear infinite;
+
+}
+
+@keyframes animate {
+    to{
+        background-position: 400px;
+    }
+}
+
+#explore{
+    width: 150px;
+    height: 40px;
+    background: #143d52;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#explore:hover{
+    background: linear-gradient(90deg, #fa7199, #f5ce62, #e43603, #f17199);
+    background-size: 400%;
+    z-index: 1;
+    animation: glow 8s linear infinite;
+}
+
+@keyframes glow {
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
